@@ -1,0 +1,11 @@
+{
+  "name": "getjson",
+  "version": "1.0.0",
+  "description": "free api for testing purpose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roman ojha",
+  "license": "ISC"
+}
