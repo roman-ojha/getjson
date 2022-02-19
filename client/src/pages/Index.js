@@ -13,12 +13,16 @@ const index = () => {
             <h1 className="NavBar_Title_son_Letter">son</h1>
           </div>
         </nav>
-        <header className="Header_Container">
-          <pre className="Header_Title">
-            {`Free API for testing
-purpose { }`}
-          </pre>
-        </header>
+        <div className="Header_Container_Left_part">
+          <header className="Header_Title">
+            <pre className="Header_Title">
+              {`Free API for testing
+purpose 
+get{JSON}`}
+            </pre>
+          </header>
+          <button className="Start_Button">Start</button>
+        </div>
       </div>
     </>
   );

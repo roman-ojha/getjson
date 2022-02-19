@@ -1,6 +1,6 @@
 .Container {
   width: calc(100% - 30px);
-  height: 60vh;
+  height: 65vh;
   background-image: linear-gradient(to left, #9893dbdb, #070071c2);
   margin: 15px;
   border-radius: 30px;
@@ -35,12 +35,18 @@
   font-size: 1.5rem;
 }
 
-.Header_Container {
+.Header_Container_Left_part {
+  height: 75%;
+  width: 45%;
   /* border: 1px solid red; */
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.Header_Title {
   display: inline-block;
-  margin-left: 10%;
-  height: 60%;
-  width: 40%;
 }
 .Header_Json_Text {
   color: white;
@@ -49,8 +55,30 @@
 }
 
 .Header_Title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: white;
   font-family: var(--primary-font-family);
   font-weight: 600;
+}
+.Start_Button {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border-width: 0px;
+  font-size: 1.3rem;
+  font-family: var(--primary-font-family);
+  font-weight: 600;
+  background-color: #aef3c7;
+  cursor: pointer;
+  transition-duration: 200ms;
+  color: rgb(37, 37, 37);
+}
+.Start_Button:hover {
+  transform: scale(1.03);
+}
+
+@media screen and (max-width: 1400px) {
+  .Header_Title {
+    font-size: 2rem;
+  }
 }
