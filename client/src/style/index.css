@@ -1,0 +1,56 @@
+.Container {
+  width: calc(100% - 30px);
+  height: 60vh;
+  background-image: linear-gradient(to left, #9893dbdb, #070071c2);
+  margin: 15px;
+  border-radius: 30px;
+}
+.NavBar_Container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  /* background-color: red; */
+  height: 12%;
+  padding: 1%;
+}
+.NavBar_Title_Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1%;
+}
+.NavBar_Title_get_Letter,
+.NavBar_Title_J_Letter,
+.NavBar_Title_son_Letter {
+  font-family: var(--primary-font-family);
+  color: white;
+}
+.NavBar_Title_get_Letter {
+  font-size: 1.1rem;
+}
+.NavBar_Title_J_Letter {
+  font-size: 2rem;
+}
+.NavBar_Title_son_Letter {
+  font-size: 1.5rem;
+}
+
+.Header_Container {
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin-left: 10%;
+  height: 60%;
+  width: 40%;
+}
+.Header_Json_Text {
+  color: white;
+  font-size: 3rem;
+  font-family: var(--primary-font-family);
+}
+
+.Header_Title {
+  font-size: 2rem;
+  color: white;
+  font-family: var(--primary-font-family);
+  font-weight: 600;
+}
