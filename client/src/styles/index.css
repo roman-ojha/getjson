@@ -34,10 +34,15 @@
 .NavBar_Title_son_Letter {
   font-size: 1.5rem;
 }
+.Header_Container {
+  height: 75%;
+  display: flex;
+  align-items: center;
+}
 
 .Header_Container_Left_part {
-  height: 75%;
-  width: 45%;
+  height: 100%;
+  width: 35%;
   /* border: 1px solid red; */
   margin-left: 5%;
   display: flex;
@@ -75,6 +80,38 @@
 }
 .Start_Button:hover {
   transform: scale(1.03);
+}
+
+.Header_Container_Right_part {
+  height: 100%;
+  /* border: 1px solid blue; */
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+.Get_Button {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  border-width: 0px;
+  font-size: 1.3rem;
+  font-family: var(--primary-font-family);
+  font-weight: 600;
+  background-color: #aef3c7;
+  cursor: pointer;
+  transition-duration: 200ms;
+  color: rgb(37, 37, 37);
+}
+.Get_Button:hover {
+  transform: scale(1.03);
+}
+.Header_Container_Right_part div {
+  display: flex;
+  margin: 10px 0px 10px 0px;
+}
+.Header_OutputViewer_Container {
+  width: calc(100% - 160px);
+  margin-left: 20px;
 }
 
 @media screen and (max-width: 1400px) {
