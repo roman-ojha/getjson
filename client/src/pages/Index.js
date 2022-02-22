@@ -26,32 +26,37 @@ get{JSON}`}
             <button className="Start_Button">Start</button>
           </div>
           <div className="Header_Container_Right_part">
-            <SyntaxHighlighter
-              className={"Header_CodeViewer_Container"}
-              language="javascript"
-              style={SyntaxHighlighterStyle}
-              customStyle={{ overflowX: "hidden", borderRadius: "20px" }}
-              useInlineStyles={{ fontSize: "1px" }}
-              showLineNumbers
-              lineProps={{ style: { wordWrap: "break-word" } }}
-              lineProps={{
-                style: {
-                  wordBreak: "break-all",
-                  whiteSpace: "pre-wrap",
-                },
-              }}
-              wrapLines={true}
-            >
-              {`const res = await fetch('https://jsonplaceholder.typicode.com/todos/1');
-console.log(await res.json()));`}
-            </SyntaxHighlighter>
-            <div>
-              <button className="Get_Button">Get</button>
+            <div className="Header_CodeViewer_Container">
               <SyntaxHighlighter
-                className={"Header_OutputViewer_Container"}
+                className={"Header_CodeViewer"}
                 language="javascript"
                 style={SyntaxHighlighterStyle}
-                customStyle={{ overflowX: "hidden", borderRadius: "20px" }}
+                customStyle={{
+                  overflowX: "hidden",
+                  borderRadius: "15px",
+                }}
+                useInlineStyles={{ fontSize: "1px" }}
+                showLineNumbers
+                lineProps={{ style: { wordWrap: "break-word" } }}
+                lineProps={{
+                  style: {
+                    wordBreak: "break-all",
+                    whiteSpace: "pre-wrap",
+                  },
+                }}
+                wrapLines={true}
+              >
+                {`const res = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+console.log(await res.json()));`}
+              </SyntaxHighlighter>
+            </div>
+            <div className="Header_OutputViewer_and_Get_Button_Container">
+              <button className="Get_Button">Get</button>
+              <SyntaxHighlighter
+                className={"Header_OutputViewer"}
+                language="javascript"
+                style={SyntaxHighlighterStyle}
+                customStyle={{ overflowX: "hidden", borderRadius: "15px" }}
                 useInlineStyles={{ fontSize: "1px" }}
                 showLineNumbers
                 lineProps={{ style: { wordWrap: "break-word" } }}
@@ -66,58 +71,131 @@ console.log(await res.json()));`}
                 {`{
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }`}
               </SyntaxHighlighter>
             </div>
           </div>
         </div>
       </div>
-      <div className="GetMethod_Container">
-        {/* <h1 className="GetMethod_Title">Get</h1> */}
-        <div className="Id_and_Get_Button_Container">
-          <input type="text" placeholder=": ID" />
-          <button>Get</button>
-        </div>
-        <SyntaxHighlighter
-          className={"Method_CodeViewer_Container"}
-          language="javascript"
-          style={SyntaxHighlighterStyle}
-          customStyle={{ overflowX: "hidden", borderRadius: "20px" }}
-          useInlineStyles={{ fontSize: "1px" }}
-          showLineNumbers
-          lineProps={{ style: { wordWrap: "break-word" } }}
-          lineProps={{
-            style: {
-              wordBreak: "break-all",
-              whiteSpace: "pre-wrap",
-            },
-          }}
-          wrapLines={true}
-        >
-          {`const res = await fetch('https://jsonplaceholder.typicode.com/todos');
+      <div className="Get_PostMethod_Container">
+        <div className="GetMethod_Container">
+          {/* <h1 className="GetMethod_Title">Get</h1> */}
+          <div className="Id_and_Get_Button_Container">
+            <input type="text" placeholder="ID" />
+            <button>Get</button>
+          </div>
+          <SyntaxHighlighter
+            className={"Method_CodeViewer_Container"}
+            language="javascript"
+            style={SyntaxHighlighterStyle}
+            customStyle={{ overflowX: "hidden", borderRadius: "15px" }}
+            useInlineStyles={{ fontSize: "1px" }}
+            showLineNumbers
+            lineProps={{ style: { wordWrap: "break-word" } }}
+            lineProps={{
+              style: {
+                wordBreak: "break-all",
+                whiteSpace: "pre-wrap",
+              },
+            }}
+            wrapLines={true}
+          >
+            {`const res = await fetch('https://jsonplaceholder.typicode.com/todos');
 console.log(await res.json()));`}
-        </SyntaxHighlighter>
-        <SyntaxHighlighter
-          className={"Method_OutputViewer_Container"}
-          language="javascript"
-          style={SyntaxHighlighterStyle}
-          customStyle={{ overflowX: "hidden", borderRadius: "20px" }}
-          useInlineStyles={{ fontSize: "1px" }}
-          showLineNumbers
-          lineProps={{ style: { wordWrap: "break-word" } }}
-          lineProps={{
-            style: {
-              wordBreak: "break-all",
-              whiteSpace: "pre-wrap",
-            },
-          }}
-          wrapLines={true}
-        >
-          {`{
-
-
+          </SyntaxHighlighter>
+          <SyntaxHighlighter
+            className={"Method_OutputViewer_Container"}
+            language="javascript"
+            style={SyntaxHighlighterStyle}
+            customStyle={{ overflowX: "hidden", borderRadius: "15px" }}
+            useInlineStyles={{ fontSize: "1px" }}
+            showLineNumbers
+            lineProps={{ style: { wordWrap: "break-word" } }}
+            lineProps={{
+              style: {
+                wordBreak: "break-all",
+                whiteSpace: "pre-wrap",
+              },
+            }}
+            wrapLines={true}
+          >
+            {`{
+            
+            
 }`}
-        </SyntaxHighlighter>
+          </SyntaxHighlighter>
+        </div>
+        <div className="PostMethod_Container">
+          {/* <h1 className="GetMethod_Title">Get</h1> */}
+          <div className="InputField_Post_Button_Container">
+            <div className="InputField_Container">
+              <input type="text" placeholder="UserName" />
+              <input type="text" placeholder="Email" />
+              <input type="text" placeholder="PhoneNumber" />
+              <input type="text" placeholder="PictureURL" />
+            </div>
+            <button>Post</button>
+          </div>
+          <SyntaxHighlighter
+            className={"Method_CodeViewer_Container"}
+            language="javascript"
+            style={SyntaxHighlighterStyle}
+            customStyle={{ overflowX: "hidden", borderRadius: "20px" }}
+            useInlineStyles={{ fontSize: "1px" }}
+            showLineNumbers
+            lineProps={{ style: { wordWrap: "break-word" } }}
+            lineProps={{
+              style: {
+                wordBreak: "break-all",
+                whiteSpace: "pre-wrap",
+              },
+            }}
+            wrapLines={true}
+          >
+            {`const res = await fetch('https://jsonplaceholder.typicode.com/todos');
+console.log(await res.json()));`}
+          </SyntaxHighlighter>
+          <SyntaxHighlighter
+            className={"Method_OutputViewer_Container"}
+            language="javascript"
+            style={SyntaxHighlighterStyle}
+            customStyle={{ overflowX: "hidden", borderRadius: "20px" }}
+            useInlineStyles={{ fontSize: "1px" }}
+            showLineNumbers
+            lineProps={{ style: { wordWrap: "break-word" } }}
+            lineProps={{
+              style: {
+                wordBreak: "break-all",
+                whiteSpace: "pre-wrap",
+              },
+            }}
+            wrapLines={true}
+          >
+            {`{
+  
+  
+
+
+
+            
+}`}
+          </SyntaxHighlighter>
+        </div>
       </div>
     </>
   );
