@@ -120,10 +120,10 @@ body {
   transform: scale(1.03);
 }
 .Header_OutputViewer_and_Get_Button_Container {
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   display: flex;
   margin: 10px 0px 10px 0px;
-  /* max-height: ; */
+  max-height: 350px;
 }
 .Header_OutputViewer {
   width: calc(100% - 160px);
@@ -220,5 +220,37 @@ body {
 @media screen and (max-width: 1400px) {
   .Header_Title {
     font-size: 2rem;
+  }
+}
+@media screen and (min-height: 950px) {
+  .Header_OutputViewer_and_Get_Button_Container {
+    max-height: 350px;
+  }
+}
+
+@media screen and (min-height: 850px) and (max-height: 950px) {
+  .Header_OutputViewer_and_Get_Button_Container {
+    max-height: 300px;
+  }
+}
+
+@media screen and (min-height: 750px) and (max-height: 850px) {
+  .Header_OutputViewer_and_Get_Button_Container {
+    max-height: 250px;
+  }
+}
+@media screen and (min-height: 650px) and (max-height: 750px) {
+  .Header_OutputViewer_and_Get_Button_Container {
+    max-height: 200px;
+  }
+}
+@media screen and (min-height: 550px) and (max-height: 650px) {
+  .Header_OutputViewer_and_Get_Button_Container {
+    max-height: 150px;
+  }
+}
+@media screen and (min-height: 0px) and (max-height: 550px) {
+  .Header_OutputViewer_and_Get_Button_Container {
+    max-height: 50px;
   }
 }

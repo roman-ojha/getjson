@@ -86,6 +86,19 @@ console.log(await res.json()));`}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 }`}
               </SyntaxHighlighter>
             </div>
