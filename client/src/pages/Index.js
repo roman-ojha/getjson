@@ -46,7 +46,7 @@ get{JSON}`}
                 }}
                 wrapLines={true}
               >
-                {`const res = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+                {`const res = await fetch('http://localhost:8080/user/1');
 console.log(await res.json()));`}
               </SyntaxHighlighter>
             </div>
@@ -69,6 +69,7 @@ console.log(await res.json()));`}
                 wrapLines={true}
               >
                 {`{
+
 
 }`}
               </SyntaxHighlighter>
@@ -99,7 +100,7 @@ console.log(await res.json()));`}
             }}
             wrapLines={true}
           >
-            {`const res = await fetch('https://jsonplaceholder.typicode.com/todos');
+            {`const res = await fetch('http://localhost:8080/user');
 console.log(await res.json()));`}
           </SyntaxHighlighter>
           <SyntaxHighlighter
@@ -151,7 +152,7 @@ console.log(await res.json()));`}
             }}
             wrapLines={true}
           >
-            {`const res = await fetch('https://jsonplaceholder.typicode.com/todos');
+            {`const res = await fetch('http://localhost:8080/user');
 console.log(await res.json()));`}
           </SyntaxHighlighter>
           <SyntaxHighlighter
