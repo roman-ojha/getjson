@@ -113,6 +113,7 @@ body {
   /* width: 100%; */
   height: max-content;
 }
+
 .Get_Button {
   width: 150px;
 }
@@ -129,6 +130,19 @@ body {
   width: calc(100% - 160px);
   width: 100%;
   margin-left: 20px;
+}
+.Header_OutputViewer::-webkit-scrollbar {
+  width: 5px;
+}
+.Header_OutputViewer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.Header_OutputViewer::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 8px;
+}
+.Header_OutputViewer::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(173, 173, 173);
 }
 .Get_PostMethod_Container {
   display: flex;
