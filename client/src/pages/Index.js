@@ -6,7 +6,7 @@ import "../styles/index.css";
 const index = () => {
   return (
     <>
-      <div className="Container">
+      <div className="UpperBar_Container">
         <nav className="NavBar_Container">
           <div className="NavBar_Title_Container">
             <h1 className="NavBar_Title_get_Letter">Get</h1>
@@ -71,6 +71,53 @@ console.log(await res.json()));`}
             </div>
           </div>
         </div>
+      </div>
+      <div className="GetMethod_Container">
+        {/* <h1 className="GetMethod_Title">Get</h1> */}
+        <div className="Id_and_Get_Button_Container">
+          <input type="text" placeholder=": ID" />
+          <button>Get</button>
+        </div>
+        <SyntaxHighlighter
+          className={"Method_CodeViewer_Container"}
+          language="javascript"
+          style={SyntaxHighlighterStyle}
+          customStyle={{ overflowX: "hidden", borderRadius: "20px" }}
+          useInlineStyles={{ fontSize: "1px" }}
+          showLineNumbers
+          lineProps={{ style: { wordWrap: "break-word" } }}
+          lineProps={{
+            style: {
+              wordBreak: "break-all",
+              whiteSpace: "pre-wrap",
+            },
+          }}
+          wrapLines={true}
+        >
+          {`const res = await fetch('https://jsonplaceholder.typicode.com/todos');
+console.log(await res.json()));`}
+        </SyntaxHighlighter>
+        <SyntaxHighlighter
+          className={"Method_OutputViewer_Container"}
+          language="javascript"
+          style={SyntaxHighlighterStyle}
+          customStyle={{ overflowX: "hidden", borderRadius: "20px" }}
+          useInlineStyles={{ fontSize: "1px" }}
+          showLineNumbers
+          lineProps={{ style: { wordWrap: "break-word" } }}
+          lineProps={{
+            style: {
+              wordBreak: "break-all",
+              whiteSpace: "pre-wrap",
+            },
+          }}
+          wrapLines={true}
+        >
+          {`{
+
+
+}`}
+        </SyntaxHighlighter>
       </div>
     </>
   );

@@ -1,3 +1,8 @@
 :root {
   --primary-font-family: "Poppins", sans-serif;
+  --primary-container-border-radius: 30px;
+  --primary-body-margin: 15px;
+  --primary-body-margin-negetive: -15px;
+  --primary-background-color: #070071c2;
+  --primary-button-color: #aef3c7;
 }

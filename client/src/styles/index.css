@@ -1,9 +1,18 @@
-.Container {
+body {
+  margin: var(--primary-body-margin) var(--primary-body-margin-negetive)
+    var(--primary-body-margin) var(--primary-body-margin);
+  overflow-x: hidden;
+}
+
+.UpperBar_Container {
   width: calc(100% - 30px);
   height: 65vh;
-  background-image: linear-gradient(to left, #9893dbdb, #070071c2);
-  margin: 15px;
-  border-radius: 30px;
+  background-image: linear-gradient(
+    to left,
+    #9893dbdb,
+    var(--primary-background-color)
+  );
+  border-radius: var(--primary-container-border-radius);
 }
 .NavBar_Container {
   display: flex;
@@ -65,7 +74,9 @@
   font-family: var(--primary-font-family);
   font-weight: 600;
 }
-.Start_Button {
+.Start_Button,
+.Get_Button,
+.Id_and_Get_Button_Container button {
   width: 200px;
   height: 40px;
   border-radius: 10px;
@@ -91,16 +102,6 @@
 }
 .Get_Button {
   width: 150px;
-  height: 40px;
-  border-radius: 10px;
-  border-width: 0px;
-  font-size: 1.3rem;
-  font-family: var(--primary-font-family);
-  font-weight: 600;
-  background-color: #aef3c7;
-  cursor: pointer;
-  transition-duration: 200ms;
-  color: rgb(37, 37, 37);
 }
 .Get_Button:hover {
   transform: scale(1.03);
@@ -112,6 +113,54 @@
 .Header_OutputViewer_Container {
   width: calc(100% - 160px);
   margin-left: 20px;
+}
+
+.GetMethod_Container {
+  /* border: 1px solid blue; */
+  width: 50%;
+  min-height: 30vh;
+  margin-top: 30px;
+  border-radius: var(--primary-container-border-radius);
+  background-image: linear-gradient(150deg, #070071c2 10%, #aef3c7b6 100%);
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+.GetMethod_Title {
+  font-size: 1.5rem;
+  font-family: var(--primary-font-family);
+  font-weight: 600;
+  color: white;
+}
+
+.Method_CodeViewer_Container {
+}
+.Method_OutputViewer_Container {
+  margin-top: 20px;
+}
+
+.Id_and_Get_Button_Container {
+  /* margin-top: 2%; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.Id_and_Get_Button_Container input {
+  width: 40%;
+  border-radius: 10px;
+  height: 35px;
+  border-width: 0px;
+  margin-left: 1%;
+}
+.Id_and_Get_Button_Container input:read-write {
+  outline: none;
+  font-family: var(--primary-font-family);
+  font-size: 1rem;
+  padding: 0px 10px 0px 10px;
+  color: black;
+}
+.Id_and_Get_Button_Container button {
+  width: 150px;
 }
 
 @media screen and (max-width: 1400px) {
