@@ -3,10 +3,14 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import SyntaxHighlighterStyle from "./SyntaxHighlighterStyle";
 import "../styles/index.css";
 import CopyedURLToast from "../react-components/CopyedURLToast";
+import { instance as axios } from "../services/axios";
 
 const Index = () => {
   const [urlCopied, setUrlCopied] = useState(false);
   const url = `${process.env.REACT_APP_API_BASE_URL}/user`;
+  const [headerContainerJsonData, setHeaderContainerJsonData] = useState(`{
+
+}`);
   const copyURL = () => {
     setUrlCopied(false);
     setUrlCopied(true);
@@ -15,6 +19,11 @@ const Index = () => {
       setUrlCopied(false);
       clearTimeout(displayToast);
     }, 1000);
+  };
+  const getJsonOfHeader = async () => {
+    const res = await axios("/user/1");
+    const userDetail = await res.data;
+    setHeaderContainerJsonData(JSON.stringify(userDetail, null, 4));
   };
   return (
     <>
@@ -65,7 +74,9 @@ console.log(await res.json()));`}
               </SyntaxHighlighter>
             </div>
             <div className="Header_OutputViewer_and_Get_Button_Container">
-              <button className="Get_Button">Get</button>
+              <button className="Get_Button" onClick={getJsonOfHeader}>
+                Get
+              </button>
               <SyntaxHighlighter
                 className={"Header_OutputViewer"}
                 language="javascript"
@@ -82,10 +93,7 @@ console.log(await res.json()));`}
                 }}
                 wrapLines={true}
               >
-                {`{
-
-
-}`}
+                {headerContainerJsonData}
               </SyntaxHighlighter>
             </div>
           </div>
