@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "displayName": "Mark Mark",
+    "username": "MarkMark95",
+    "email": "MarkMark95@gmail.com",
+    "phoneNumber": 985432176,
+    "picture": "https://images.unsplash.com/photo-1534614971-6be99a7a3ffd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    "address": {
+      "country": "Usa",
+      "city": "Washington"
+    },
+    "DOB": {
+      "year": 1999,
+      "month": 7,
+      "day": 13
+    }
+  },
+  {
+    "id": 2,
+    "displayName": "James Smith",
+    "username": "JamesSmith95",
+    "email": "JamesSmith95@gmail.com",
+    "phoneNumber": 9823148251,
+    "picture": "https://images.unsplash.com/photo-1597204081767-4c14a6b7cbec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2luZ2xlJTIwcGVyc29ufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+    "address": {
+      "country": "Usa",
+      "city": "Boston"
+    },
+    "DOB": {
+      "year": 2010,
+      "month": 8,
+      "day": 12
+    }
+  },
+  {
+    "id": 3,
+    "displayName": "John Johnson",
+    "username": "JohnJohnson345",
+    "email": "JohnJohnson345@gmail.com",
+    "phoneNumber": 9843263572,
+    "picture": "https://images.unsplash.com/photo-1597204081767-4c14a6b7cbec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    "address": {
+      "country": "India",
+      "city": "Mumbai"
+    },
+    "DOB": {
+      "year": 1998,
+      "month": 9,
+      "day": 10
+    }
+  },
+  {
+    "id": 4,
+    "displayName": "Michael Williams",
+    "username": "MichaelWilliams987",
+    "email": "MichaelWilliams987@gmail.com",
+    "phoneNumber": 9830780256,
+    "picture": "https://images.unsplash.com/photo-1502258097612-43e695deebad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    "address": {
+      "country": "Usa",
+      "city": "East Hartford"
+    },
+    "DOB": {
+      "year": 1998,
+      "month": 12,
+      "day": 28
+    }
+  },
+  {
+    "id": 5,
+    "displayName": "Jessica Miller",
+    "username": "JessicaMiller23",
+    "email": "JessicaMiller23@gmail.com",
+    "phoneNumber": 9892591459,
+    "picture": "https://images.unsplash.com/photo-1583423420318-93a4598b4798?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    "address": {
+      "country": "Usa",
+      "city": "California"
+    },
+    "DOB": {
+      "year": 1995,
+      "month": 3,
+      "day": 20
+    }
+  }
+]
