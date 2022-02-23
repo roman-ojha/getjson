@@ -4,6 +4,7 @@ import SyntaxHighlighterStyle from "./SyntaxHighlighterStyle";
 import "../styles/index.css";
 import CopyedURLToast from "../react-components/CopyedURLToast";
 import { instance as axios } from "../services/axios";
+import Footer from "../react-components/Footer";
 
 const Index = () => {
   const [urlCopied, setUrlCopied] = useState(false);
@@ -308,6 +309,7 @@ console.log(await res.json()));`}
           </SyntaxHighlighter>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
