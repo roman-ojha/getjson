@@ -1,7 +1,10 @@
-[<h1 style="font-size:60px; width:100%;">GetJson <img src="./appicon.png" style="width:60px;" alt="app Icon"/></h1>](./appicon.png)
-## free API Provider for Testing Purpose Using:
-1. ReactJS
-2. NodeJS
+<div align="center">
+
+[<img src="./appicon.png" style="width:90px;" alt="app Icon"/><h1 style="font-size:60px; width:100%;">GetJson</h1>](./appicon.png)
+
+# 🗒️Free API Provider for Testing Purpose🗒️
+
+</div>
 
 ## UI:
 [<img src="interface/Home.png" alt="Home"></img>](interface/Home.png)
@@ -19,3 +22,8 @@
 2. create '.env' file and add variable value included in '.env.example'
 3. Run `yarn` to install all packages
 4. Run `yarn start` to run the server
+
+
+## Technology Use:
+1. ReactJS
+2. NodeJS
