@@ -1,6 +1,6 @@
 {
   "name": "getjson",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "free api for testing purpose",
   "main": "index.js",
   "type": "module",
