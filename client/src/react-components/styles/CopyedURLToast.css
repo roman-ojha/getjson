@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
   animation-name: showToast;
-  animation-duration: 500ms;
+  animation-duration: 400ms;
 }
 .CopyedURLToast_Page_Container h1 {
   background-color: #3a404c;

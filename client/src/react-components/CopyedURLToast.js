@@ -1,11 +1,11 @@
 import React from "react";
 import "./styles/CopyedURLToast.css";
 
-const CopyedURLToast = () => {
+const CopyedURLToast = (prop) => {
   return (
     <>
       <div className="CopyedURLToast_Page_Container">
-        <h1>Copyed http://localhost:8080/user</h1>
+        <h1>Copyed {prop.url}</h1>
       </div>
     </>
   );

@@ -6,7 +6,9 @@ import CopyedURLToast from "../react-components/CopyedURLToast";
 
 const Index = () => {
   const [urlCopied, setUrlCopied] = useState(false);
+  const url = `${process.env.REACT_APP_API_BASE_URL}/user`;
   const copyURL = () => {
+    setUrlCopied(false);
     setUrlCopied(true);
     const displayToast = setTimeout(() => {
       setUrlCopied(false);
@@ -15,7 +17,7 @@ const Index = () => {
   };
   return (
     <>
-      {urlCopied ? <CopyedURLToast /> : ""}
+      {urlCopied ? <CopyedURLToast url={url} /> : ""}
 
       <div className="UpperBar_Container">
         <nav className="NavBar_Container">
@@ -57,7 +59,7 @@ get{JSON}`}
                 }}
                 wrapLines={true}
               >
-                {`const res = await fetch('http://localhost:8080/user/1');
+                {`const res = await fetch('${url}/1');
 console.log(await res.json()));`}
               </SyntaxHighlighter>
             </div>
@@ -121,7 +123,7 @@ console.log(await res.json()));`}
             }}
             wrapLines={true}
           >
-            {`const res = await fetch('http://localhost:8080/user');
+            {`const res = await fetch('${url}');
 console.log(await res.json()));`}
           </SyntaxHighlighter>
           <SyntaxHighlighter
@@ -182,7 +184,7 @@ console.log(await res.json()));`}
             }}
             wrapLines={true}
           >
-            {`const res = await fetch('http://localhost:8080/user');
+            {`const res = await fetch('${url}');
 console.log(await res.json()));`}
           </SyntaxHighlighter>
           <SyntaxHighlighter
