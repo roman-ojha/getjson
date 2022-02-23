@@ -17,9 +17,6 @@
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.About_Company {
-  /* border: 1px solid pink; */
-}
 .About_Company h2 {
   font-size: 1rem;
   font-family: var(--primary-font-family);

@@ -7,7 +7,7 @@
   }
 }
 
-.CopyedURLToast_Page_Container {
+.CopiedURLToast_Page_Container {
   position: fixed;
   /* border: 3px solid red; */
   width: 97%;
@@ -18,7 +18,7 @@
   animation-name: showToast;
   animation-duration: 400ms;
 }
-.CopyedURLToast_Page_Container h1 {
+.CopiedURLToast_Page_Container h1 {
   background-color: #3a404c;
   font-family: var(--primary-font-family);
   font-size: 1.2rem;
