@@ -91,9 +91,16 @@ body {
   color: rgb(37, 37, 37);
 }
 .Start_Button:hover,
+.Get_Button:hover,
 .Id_and_Get_Button_Container button:hover,
 .InputField_Post_Button_Container button:hover {
   transform: scale(1.03);
+}
+.Start_Button:active,
+.Get_Button:active,
+.Id_and_Get_Button_Container button:active,
+.InputField_Post_Button_Container button:active {
+  transform: scale(0.98);
 }
 
 .Header_Container_Right_part {
@@ -116,9 +123,6 @@ body {
 
 .Get_Button {
   width: 150px;
-}
-.Get_Button:hover {
-  transform: scale(1.03);
 }
 .Header_OutputViewer_and_Get_Button_Container {
   /* border: 2px solid purple; */
@@ -195,8 +199,34 @@ body {
   padding: 0px 10px 0px 10px;
   color: black;
 }
-.Id_and_Get_Button_Container button {
+.Get_Method_Button_Container {
+  display: flex;
+}
+.Get_Method_Button_Container .Get_Method_Get_Button {
   width: 150px;
+}
+.Get_Method_Button_Container .Get_Method_Copy_Button,
+.Post_Method_Button_Container .Get_Method_Copy_Button {
+  width: 50px;
+  height: 40px;
+  border-radius: 10px;
+  border-width: 0px;
+  cursor: pointer;
+  transition-duration: 200ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  background-color: #23272f;
+  color: white;
+}
+.Get_Method_Button_Container .Get_Method_Copy_Button:hover,
+.Post_Method_Button_Container .Get_Method_Copy_Button:hover {
+  transform: scale(1.03);
+}
+.Get_Method_Button_Container .Get_Method_Copy_Button:active,
+.Post_Method_Button_Container .Get_Method_Copy_Button:active {
+  transform: scale(0.98);
 }
 .PostMethod_Container {
   background-image: linear-gradient(150deg, #070071c2 10%, #aef3c7b6 100%);
@@ -229,6 +259,15 @@ body {
   font-family: var(--primary-font-family);
   font-size: 1rem;
   padding: 0px 5px 0px 15px;
+}
+
+.Post_Method_Button_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.Post_Method_Button_Container .Get_Method_Copy_Button {
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1400px) {

@@ -2,10 +2,12 @@ import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import SyntaxHighlighterStyle from "./SyntaxHighlighterStyle";
 import "../styles/index.css";
+import CopyedURLToast from "../react-components/CopyedURLToast";
 
 const index = () => {
   return (
     <>
+      <CopyedURLToast />
       <div className="UpperBar_Container">
         <nav className="NavBar_Container">
           <div className="NavBar_Title_Container">
@@ -82,7 +84,17 @@ console.log(await res.json()));`}
           {/* <h1 className="GetMethod_Title">Get</h1> */}
           <div className="Id_and_Get_Button_Container">
             <input type="text" placeholder="ID" />
-            <button>Get</button>
+            <div className="Get_Method_Button_Container">
+              <button className="Get_Method_Copy_Button">
+                <span
+                  className="iconify"
+                  data-icon="mdi:content-copy"
+                  data-width="24"
+                  data-height="24"
+                ></span>
+              </button>
+              <button className="Get_Method_Get_Button">Get</button>
+            </div>
           </div>
           <SyntaxHighlighter
             className={"Method_CodeViewer_Container"}
@@ -134,7 +146,16 @@ console.log(await res.json()));`}
               <input type="text" placeholder="PhoneNumber" />
               <input type="text" placeholder="PictureURL" />
             </div>
-            <button>Post</button>
+            <div className="Post_Method_Button_Container">
+              <button className="Get_Method_Get_Button">Post</button>
+              <button className="Get_Method_Copy_Button">
+                <span
+                  class="iconify"
+                  data-icon="mdi:content-copy"
+                  data-width="24"
+                ></span>
+              </button>
+            </div>
           </div>
           <SyntaxHighlighter
             className={"Method_CodeViewer_Container"}
