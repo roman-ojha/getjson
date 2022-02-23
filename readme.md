@@ -10,11 +10,12 @@
 
 ### Server:
 1. `GetJson`
-2. Run `num install` to install all packages
-3. Run `npm start` to run the server
+2. create '.env' file and add variable value included in '.env.example'
+3. Run `yarn` to install all packages
+4. Run `yarn dev` to run the server
 
 ### React:
 1. `GetJson/client`
 2. create '.env' file and add variable value included in '.env.example'
-3. Run `npm install` to install all packages
-4. Run `npm start` to run the server
+3. Run `yarn` to install all packages
+4. Run `yarn start` to run the server
