@@ -1,0 +1,29 @@
+@keyframes showToast {
+  0% {
+    filter: opacity(0);
+  }
+  100% {
+    filter: opacity(1);
+  }
+}
+
+.CopyedURLToast_Page_Container {
+  position: fixed;
+  /* border: 3px solid red; */
+  width: 97%;
+  height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: showToast;
+  animation-duration: 500ms;
+}
+.CopyedURLToast_Page_Container h1 {
+  background-color: #3a404c;
+  font-family: var(--primary-font-family);
+  font-size: 1.2rem;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+}

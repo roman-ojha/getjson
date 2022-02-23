@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import SyntaxHighlighterStyle from "./SyntaxHighlighterStyle";
 import "../styles/index.css";
 import CopyedURLToast from "../react-components/CopyedURLToast";
 
-const index = () => {
+const Index = () => {
+  const [urlCopied, setUrlCopied] = useState(false);
+  const copyURL = () => {
+    setUrlCopied(true);
+    const displayToast = setTimeout(() => {
+      setUrlCopied(false);
+      clearTimeout(displayToast);
+    }, 2000);
+  };
   return (
     <>
-      <CopyedURLToast />
+      {urlCopied ? <CopyedURLToast /> : ""}
+
       <div className="UpperBar_Container">
         <nav className="NavBar_Container">
           <div className="NavBar_Title_Container">
@@ -85,7 +94,7 @@ console.log(await res.json()));`}
           <div className="Id_and_Get_Button_Container">
             <input type="text" placeholder="ID" />
             <div className="Get_Method_Button_Container">
-              <button className="Get_Method_Copy_Button">
+              <button className="Get_Method_Copy_Button" onClick={copyURL}>
                 <span
                   className="iconify"
                   data-icon="mdi:content-copy"
@@ -150,7 +159,7 @@ console.log(await res.json()));`}
               <button className="Get_Method_Get_Button">Post</button>
               <button className="Get_Method_Copy_Button">
                 <span
-                  class="iconify"
+                  className="iconify"
                   data-icon="mdi:content-copy"
                   data-width="24"
                 ></span>
@@ -207,4 +216,4 @@ console.log(await res.json()));`}
   );
 };
 
-export default index;
+export default Index;
