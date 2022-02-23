@@ -16,14 +16,11 @@ router.get("/user", (req, res) => {
 });
 
 router.get("/user/:id", (req, res) => {
+  console.log(req.params.id);
   const id = parseInt(req.params.id);
-  if (!id) {
-    return res
-      .status(400)
-      .end(JSON.stringify({ success: false, msg: "Please send id" }, null, 3));
-  }
   if (id > userData.length) {
-    return res.status(400).end(
+    res.setHeader("Content-Type", "application/json");
+    return res.end(
       JSON.stringify(
         {
           success: false,
@@ -35,8 +32,9 @@ router.get("/user/:id", (req, res) => {
     );
   }
   const singleUserData = userData.find((data) => data.id === id);
+  res.statusCode = 200;
   res.setHeader("Content-Type", "application/json");
-  res.end(JSON.stringify(singleUserData, null, 3));
+  return res.end(JSON.stringify(singleUserData, null, 3));
 });
 
 router.post("/user", (req, res) => {

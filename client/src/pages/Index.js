@@ -11,6 +11,11 @@ const Index = () => {
   const [headerContainerJsonData, setHeaderContainerJsonData] = useState(`{
 
 }`);
+  const [getMethodJsonData, setGetMethodJsonData] = useState(`{
+
+  
+}`);
+  const [getMethodID, setgetMethodID] = useState("");
   const copyURL = () => {
     setUrlCopied(false);
     setUrlCopied(true);
@@ -21,9 +26,20 @@ const Index = () => {
     }, 1000);
   };
   const getJsonOfHeader = async () => {
-    const res = await axios("/user/1");
-    const userDetail = await res.data;
-    setHeaderContainerJsonData(JSON.stringify(userDetail, null, 4));
+    try {
+      const res = await axios.get("/user/1");
+      const userDetail = await res.data;
+      setHeaderContainerJsonData(JSON.stringify(userDetail, null, 4));
+    } catch (e) {}
+  };
+  const getJsonForGetMethod = async () => {
+    try {
+      const res = await axios.get(`/user${getMethodID}`);
+      const usersDetail = await res.data;
+      setGetMethodJsonData(JSON.stringify(usersDetail, null, 4));
+    } catch (e) {
+      console.log(e);
+    }
   };
   return (
     <>
@@ -103,7 +119,13 @@ console.log(await res.json()));`}
         <div className="GetMethod_Container">
           {/* <h1 className="GetMethod_Title">Get</h1> */}
           <div className="Id_and_Get_Button_Container">
-            <input type="text" placeholder="ID" />
+            <input
+              type="text"
+              placeholder="ID"
+              onChange={(e) => {
+                setgetMethodID(`/${e.target.value}`);
+              }}
+            />
             <div className="Get_Method_Button_Container">
               <button className="Get_Method_Copy_Button" onClick={copyURL}>
                 <span
@@ -113,7 +135,12 @@ console.log(await res.json()));`}
                   data-height="24"
                 ></span>
               </button>
-              <button className="Get_Method_Get_Button">Get</button>
+              <button
+                className="Get_Method_Get_Button"
+                onClick={getJsonForGetMethod}
+              >
+                Get
+              </button>
             </div>
           </div>
           <SyntaxHighlighter
@@ -132,7 +159,7 @@ console.log(await res.json()));`}
             }}
             wrapLines={true}
           >
-            {`const res = await fetch('${url}');
+            {`const res = await fetch('${url}${getMethodID}');
 console.log(await res.json()));`}
           </SyntaxHighlighter>
           <SyntaxHighlighter
@@ -151,10 +178,7 @@ console.log(await res.json()));`}
             }}
             wrapLines={true}
           >
-            {`{
-            
-            
-}`}
+            {getMethodJsonData}
           </SyntaxHighlighter>
         </div>
         <div className="PostMethod_Container">
