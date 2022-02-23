@@ -10,10 +10,11 @@ const Index = () => {
   const copyURL = () => {
     setUrlCopied(false);
     setUrlCopied(true);
+    navigator.clipboard.writeText(url);
     const displayToast = setTimeout(() => {
       setUrlCopied(false);
       clearTimeout(displayToast);
-    }, 2000);
+    }, 1000);
   };
   return (
     <>
@@ -159,7 +160,7 @@ console.log(await res.json()));`}
             </div>
             <div className="Post_Method_Button_Container">
               <button className="Get_Method_Get_Button">Post</button>
-              <button className="Get_Method_Copy_Button">
+              <button className="Get_Method_Copy_Button" onClick={copyURL}>
                 <span
                   className="iconify"
                   data-icon="mdi:content-copy"
