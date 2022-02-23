@@ -15,7 +15,17 @@ const Index = () => {
 
   
 }`);
+  const [postMethodJsonData, setPostMethodJsonData] = useState(`{
+
+  
+}`);
   const [getMethodID, setgetMethodID] = useState("");
+  const [postMethodFormData, setPostMethodFormData] = useState({
+    username: "",
+    email: "",
+    phoneNumber: "",
+    picture: "",
+  });
   const copyURL = () => {
     setUrlCopied(false);
     setUrlCopied(true);
@@ -41,6 +51,26 @@ const Index = () => {
       console.log(e);
     }
   };
+  const getPostMethodFormData = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setPostMethodFormData({
+      ...postMethodFormData,
+      [name]: value,
+    });
+  };
+  const getJsonForPostMethod = async () => {
+    const data = postMethodFormData;
+    try {
+      const res = await axios({
+        method: "POST",
+        url: "/user",
+        data: data,
+      });
+      const usersDetail = await res.data;
+      setPostMethodJsonData(JSON.stringify(usersDetail, null, 4));
+    } catch (e) {}
+  };
   return (
     <>
       {urlCopied ? <CopyedURLToast url={url} /> : ""}
@@ -62,7 +92,9 @@ purpose
 get{JSON}`}
               </pre>
             </header>
-            <button className="Start_Button">Start</button>
+            <a href="#body" className="Start_Button">
+              Start
+            </a>
           </div>
           <div className="Header_Container_Right_part">
             <div className="Header_CodeViewer_Container">
@@ -89,7 +121,10 @@ get{JSON}`}
 console.log(await res.json()));`}
               </SyntaxHighlighter>
             </div>
-            <div className="Header_OutputViewer_and_Get_Button_Container">
+            <div
+              className="Header_OutputViewer_and_Get_Button_Container"
+              id="body"
+            >
               <button className="Get_Button" onClick={getJsonOfHeader}>
                 Get
               </button>
@@ -185,13 +220,46 @@ console.log(await res.json()));`}
           {/* <h1 className="GetMethod_Title">Get</h1> */}
           <div className="InputField_Post_Button_Container">
             <div className="InputField_Container">
-              <input type="text" placeholder="UserName" />
-              <input type="text" placeholder="Email" />
-              <input type="text" placeholder="PhoneNumber" />
-              <input type="text" placeholder="PictureURL" />
+              <input
+                type="text"
+                placeholder="UserName"
+                name="username"
+                value={postMethodFormData.username}
+                onChange={getPostMethodFormData}
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                value={postMethodFormData.email}
+                onChange={getPostMethodFormData}
+                required
+              />
+              <input
+                type="number"
+                placeholder="PhoneNumber"
+                name="phoneNumber"
+                value={postMethodFormData.phoneNumber}
+                onChange={getPostMethodFormData}
+                required
+              />
+              <input
+                type="text"
+                placeholder="PictureURL"
+                name="picture"
+                value={postMethodFormData.picture}
+                onChange={getPostMethodFormData}
+                required
+              />
             </div>
             <div className="Post_Method_Button_Container">
-              <button className="Get_Method_Get_Button">Post</button>
+              <button
+                className="Get_Method_Get_Button"
+                onClick={getJsonForPostMethod}
+              >
+                Post
+              </button>
               <button className="Get_Method_Copy_Button" onClick={copyURL}>
                 <span
                   className="iconify"
@@ -236,14 +304,7 @@ console.log(await res.json()));`}
             }}
             wrapLines={true}
           >
-            {`{
-  
-  
-
-
-
-            
-}`}
+            {postMethodJsonData}
           </SyntaxHighlighter>
         </div>
       </div>

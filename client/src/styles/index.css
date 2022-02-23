@@ -90,6 +90,12 @@ body {
   transition-duration: 200ms;
   color: rgb(37, 37, 37);
 }
+.Start_Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
 .Start_Button:hover,
 .Get_Button:hover,
 .Id_and_Get_Button_Container button:hover,
@@ -175,8 +181,22 @@ body {
   color: white;
 }
 
+.Method_OutputViewer_Container::-webkit-scrollbar {
+  width: 5px;
+}
+.Method_OutputViewer_Container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.Method_OutputViewer_Container::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 8px;
+}
+.Method_OutputViewer_Container::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(173, 173, 173);
+}
 .Method_OutputViewer_Container {
   margin-top: 20px;
+  max-height: 500px;
 }
 
 .Id_and_Get_Button_Container {

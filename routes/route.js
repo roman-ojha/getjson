@@ -45,7 +45,6 @@ router.post("/user", (req, res) => {
     !newUser.phoneNumber ||
     !newUser.picture
   ) {
-    res.statusCode = 400;
     res.setHeader("Content-Type", "application/json");
     return res.end(
       JSON.stringify(
