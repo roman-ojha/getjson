@@ -39,4 +39,33 @@ router.get("/user/:id", (req, res) => {
   res.end(JSON.stringify(singleUserData, null, 3));
 });
 
+router.post("/user", (req, res) => {
+  const newUser = req.body;
+  if (
+    !newUser.username ||
+    !newUser.email ||
+    !newUser.phoneNumber ||
+    !newUser.picture
+  ) {
+    res.statusCode = 400;
+    res.setHeader("Content-Type", "application/json");
+    return res.end(
+      JSON.stringify(
+        {
+          success: false,
+          msg: "Required Field: username, email, phoneNumber, picture",
+        },
+        null,
+        4
+      )
+    );
+  }
+  newUser["id"] = userData.length + 1;
+  const resUser = userData;
+  resUser.unshift(newUser);
+  res.statusCode = 200;
+  res.setHeader("Content-Type", "application/json");
+  return res.end(JSON.stringify(resUser, null, 3));
+});
+
 export default router;
