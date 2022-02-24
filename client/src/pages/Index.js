@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import SyntaxHighlighterStyle from "./SyntaxHighlighterStyle";
 import "../styles/index.css";
+import "../styles/indexMedia.css";
 import CopiedURLToast from "../react-components/CopiedURLToast";
 import { instance as axios } from "../services/axios";
 import Footer from "../react-components/Footer";
@@ -105,7 +106,6 @@ get{JSON}`}
                 style={SyntaxHighlighterStyle}
                 customStyle={{
                   overflowX: "hidden",
-                  borderRadius: "15px",
                 }}
                 useInlineStyles={{ fontSize: "1px" }}
                 showLineNumbers
@@ -133,7 +133,7 @@ console.log(await res.json()));`}
                 className={"Header_OutputViewer"}
                 language="javascript"
                 style={SyntaxHighlighterStyle}
-                customStyle={{ overflowX: "hidden", borderRadius: "15px" }}
+                customStyle={{ overflowX: "hidden" }}
                 useInlineStyles={{ fontSize: "1px" }}
                 showLineNumbers
                 lineProps={{ style: { wordWrap: "break-word" } }}
