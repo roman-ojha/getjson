@@ -13,7 +13,7 @@
 
 ### Server:
 1. `GetJson`
-2. create '.env' file and add variable value included in '.env.example'
+2. create '.env.development' file and add variable value of you own included in '.env.example'
 3. Run `yarn` to install all packages
 4. Run `yarn dev` to run the server
 
