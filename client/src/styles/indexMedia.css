@@ -44,28 +44,196 @@
     height: 60vh;
   }
 }
+@media screen and (min-width: 950px) and (max-width: 1200px) {
+  .UpperBar_Container {
+    height: 450px;
+  }
+  .Header_Container {
+    justify-content: space-around;
+  }
+  .Header_Container_Left_part {
+    width: 35%;
+    margin-left: 1%;
+  }
+
+  .Header_Container_Right_part {
+    width: 55%;
+  }
+  .Header_CodeViewer_Container {
+    width: 100%;
+  }
+  .Header_CodeViewer {
+    height: max-content;
+  }
+  .Header_OutputViewer_and_Get_Button_Container {
+    max-height: 190px;
+  }
+  .Header_OutputViewer {
+    width: 100%;
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 950px) {
+  .NavBar_Title_Container {
+    margin-left: 3%;
+  }
+  .UpperBar_Container {
+    height: 450px;
+  }
+  .Header_Container {
+    justify-content: space-around;
+  }
+  .Header_Container_Left_part {
+    width: 35%;
+    margin-left: 1%;
+  }
+  .Header_Title {
+    font-size: 1.9rem;
+  }
+  .Start_Button {
+    width: 45%;
+    height: 35px;
+  }
+  .Header_Container_Right_part {
+    width: 50%;
+  }
+  .Get_Button {
+    width: 130px;
+    height: 35px;
+  }
+  .Header_CodeViewer_Container {
+    width: 100%;
+  }
+  .Header_CodeViewer {
+    height: max-content;
+  }
+  .Header_OutputViewer_and_Get_Button_Container {
+    max-height: 185px;
+  }
+  .Header_OutputViewer {
+    width: 100%;
+    margin-left: 20px;
+  }
+}
 @media screen and (min-width: 800px) and (max-width: 1000px) {
   * {
     font-size: 18px;
   }
+}
+@media screen and (min-width: 650px) and (max-width: 750px) {
+  .Header_OutputViewer_and_Get_Button_Container {
+    max-height: 170px;
+  }
+  .Header_OutputViewer {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 700px) {
   .UpperBar_Container {
-    height: 58vh;
+    height: 380px;
+  }
+  .Header_Container {
+    justify-content: space-around;
+  }
+  .Header_Container_Left_part {
+    width: 35%;
+    margin-left: 1%;
+  }
+  .Header_Title {
+    font-size: 1.7rem;
+  }
+  .Start_Button {
+    width: 45%;
+    height: 35px;
+  }
+  .Header_Container_Right_part {
+    width: 50%;
+  }
+  .Get_Button {
+    width: 130px;
+    height: 30px;
+  }
+  .Header_CodeViewer_Container {
+    width: 100%;
+  }
+  .Header_CodeViewer {
+    height: 40px;
+    border-radius: 10px;
+  }
+  .Header_OutputViewer {
+    width: 100%;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  body {
+    margin: 12px 12px 12px 12px;
+    overflow-x: hidden;
+  }
+  .UpperBar_Container {
+    width: 100%;
+    height: 600px;
+    border-radius: 18px;
+  }
+  .NavBar_Container {
+    padding-left: 4%;
+    height: 10%;
+  }
+  .Header_Container {
+    flex-direction: column;
+    height: 87%;
+  }
+  .Header_Container_Left_part {
+    height: 45%;
+    width: 100%;
+    margin-left: 0px;
+    align-items: center;
+  }
+  .Start_Button {
+    margin-top: 20px;
+  }
+  .Header_Title {
+    font-size: 2.3rem;
+  }
+  .Header_Container_Right_part {
+    margin-top: 10px;
+    height: 250px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .Header_CodeViewer_Container {
+    width: 100%;
+  }
+  .Header_CodeViewer {
+    height: max-content;
+  }
+  .Header_OutputViewer_and_Get_Button_Container {
+    max-height: 150px;
+  }
+  .Header_OutputViewer {
+    width: 100%;
+    margin-left: 10px;
+  }
+  .Start_Button {
+    width: 35%;
+    height: 38px;
+  }
+  .Get_Button {
+    width: 135px;
+    height: 38px;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 800px) {
   * {
     font-size: 16px;
   }
-  .UpperBar_Container {
-    height: 55vh;
-  }
 }
 @media screen and (min-width: 500px) and (max-width: 750px) {
   * {
     font-size: 15px;
-  }
-  .UpperBar_Container {
-    height: 53vh;
   }
 }
 
@@ -148,7 +316,7 @@
     font-size: 13px;
   }
 }
-@media screen and (min-width: 250px) and (max-width: 350px) {
+@media screen and (min-width: 300px) and (max-width: 350px) {
   * {
     font-size: 11px;
   }
@@ -159,6 +327,24 @@
   .Get_Button {
     width: 125px;
     height: 35px;
+  }
+}
+@media screen and (min-width: 150px) and (max-width: 300px) {
+  * {
+    font-size: 10px;
+  }
+  .UpperBar_Container {
+    width: 100%;
+    height: 550px;
+    border-radius: 13px;
+  }
+  .Start_Button {
+    width: 35%;
+    height: 32px;
+  }
+  .Get_Button {
+    width: 120px;
+    height: 32px;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 250px) {

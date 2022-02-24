@@ -106,7 +106,6 @@ get{JSON}`}
                 style={SyntaxHighlighterStyle}
                 customStyle={{
                   overflowX: "hidden",
-                  borderRadius: "15px",
                 }}
                 useInlineStyles={{ fontSize: "1px" }}
                 showLineNumbers
@@ -134,7 +133,7 @@ console.log(await res.json()));`}
                 className={"Header_OutputViewer"}
                 language="javascript"
                 style={SyntaxHighlighterStyle}
-                customStyle={{ overflowX: "hidden", borderRadius: "15px" }}
+                customStyle={{ overflowX: "hidden" }}
                 useInlineStyles={{ fontSize: "1px" }}
                 showLineNumbers
                 lineProps={{ style: { wordWrap: "break-word" } }}

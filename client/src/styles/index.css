@@ -129,8 +129,21 @@ body {
 .Header_CodeViewer {
   /* width: 100%; */
   height: max-content;
+  border-radius: 15px;
 }
-
+.Header_CodeViewer::-webkit-scrollbar {
+  width: 5px;
+}
+.Header_CodeViewer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.Header_CodeViewer::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 8px;
+}
+.Header_CodeViewer::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(173, 173, 173);
+}
 .Get_Button {
   width: 150px;
 }
@@ -141,7 +154,7 @@ body {
   max-height: 350px;
 }
 .Header_OutputViewer {
-  width: calc(100% - 160px);
+  border-radius: 15px;
   width: 100%;
   margin-left: 20px;
 }
