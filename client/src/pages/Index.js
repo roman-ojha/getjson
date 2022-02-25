@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import SyntaxHighlighterStyle from "./SyntaxHighlighterStyle";
 import "../styles/index.css";
@@ -183,7 +183,7 @@ console.log(await res.json()));`}
             className={"Method_CodeViewer_Container"}
             language="javascript"
             style={SyntaxHighlighterStyle}
-            customStyle={{ overflowX: "hidden", borderRadius: "15px" }}
+            customStyle={{ overflowX: "hidden" }}
             useInlineStyles={{ fontSize: "1px" }}
             showLineNumbers
             lineProps={{ style: { wordWrap: "break-word" } }}
@@ -202,7 +202,7 @@ console.log(await res.json()));`}
             className={"Method_OutputViewer_Container"}
             language="javascript"
             style={SyntaxHighlighterStyle}
-            customStyle={{ overflowX: "hidden", borderRadius: "15px" }}
+            customStyle={{ overflowX: "hidden" }}
             useInlineStyles={{ fontSize: "1px" }}
             showLineNumbers
             lineProps={{ style: { wordWrap: "break-word" } }}
@@ -274,7 +274,7 @@ console.log(await res.json()));`}
             className={"Method_CodeViewer_Container"}
             language="javascript"
             style={SyntaxHighlighterStyle}
-            customStyle={{ overflowX: "hidden", borderRadius: "20px" }}
+            customStyle={{ overflowX: "hidden" }}
             useInlineStyles={{ fontSize: "1px" }}
             showLineNumbers
             lineProps={{ style: { wordWrap: "break-word" } }}
@@ -293,7 +293,7 @@ console.log(await res.json()));`}
             className={"Method_OutputViewer_Container"}
             language="javascript"
             style={SyntaxHighlighterStyle}
-            customStyle={{ overflowX: "hidden", borderRadius: "20px" }}
+            customStyle={{ overflowX: "hidden" }}
             useInlineStyles={{ fontSize: "1px" }}
             showLineNumbers
             lineProps={{ style: { wordWrap: "break-word" } }}

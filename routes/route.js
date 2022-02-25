@@ -16,7 +16,6 @@ router.get("/user", (req, res) => {
 });
 
 router.get("/user/:id", (req, res) => {
-  console.log(req.params.id);
   const id = parseInt(req.params.id);
   if (id > userData.length) {
     res.setHeader("Content-Type", "application/json");
