@@ -7,7 +7,7 @@ fs.readFile("./db/userDetails.json", "utf-8", (err, data) => {
 });
 
 router.get("/", (req, res) => {
-  res.send("GetJson");
+  return res.redirect("https://getjson.netlify.app");
 });
 
 router.get("/user", (req, res) => {

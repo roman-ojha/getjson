@@ -7,7 +7,14 @@
 </div>
 
 ## Running On:
+## Client:
+[<h2>https://getjson.netlify.app</h2>](https://getjson.netlify.app)
+
 [<h2>https://getjson-data.firebaseapp.com</h2>](https://getjson-data.firebaseapp.com)
+
+## API:
+
+[<h2>https://getjson-data.herokuapp.com/user</h2>](https://getjson-data.herokuapp.com/user)
 
 ## UI:
 [<img src="interface/Home.png" alt="Home"></img>](interface/Home.png)
