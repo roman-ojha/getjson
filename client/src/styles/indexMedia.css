@@ -175,6 +175,7 @@
   .Get_Method_Button_Container .Get_Method_Get_Button {
     width: 95px;
     height: 35px;
+    border-radius: 7px;
   }
   .Get_Method_Button_Container .Get_Method_Copy_Button,
   .Post_Method_Button_Container .Get_Method_Copy_Button {
@@ -190,6 +191,7 @@
   .InputField_Post_Button_Container button {
     width: 95px;
     height: 35px;
+    border-radius: 7px;
   }
   .InputField_Container {
     width: 65%;
@@ -279,6 +281,7 @@
   .Start_Button {
     width: 45%;
     height: 35px;
+    border-radius: 7px;
   }
   .Header_Container_Right_part {
     width: 50%;
@@ -286,6 +289,7 @@
   .Get_Button {
     width: 130px;
     height: 35px;
+    border-radius: 7px;
   }
   .Header_CodeViewer_Container {
     width: 100%;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import SyntaxHighlighterStyle from "./SyntaxHighlighterStyle";
 import "../styles/index.css";

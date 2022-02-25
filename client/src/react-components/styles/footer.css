@@ -48,3 +48,32 @@
   color: rgb(238, 238, 238);
   margin-bottom: 10px;
 }
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .Footer_Container {
+    width: calc(100% - 20px);
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  .Footer_Container {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .Company_and_Follow_Us_Container {
+    width: 40%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .FollowUs_Container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .FollowUs_Icons {
+    margin-left: 0px;
+  }
+}
