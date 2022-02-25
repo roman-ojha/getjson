@@ -57,11 +57,9 @@ router.post("/user", (req, res) => {
     );
   }
   newUser["id"] = userData.length + 1;
-  const resUser = userData;
-  resUser.unshift(newUser);
   res.statusCode = 200;
   res.setHeader("Content-Type", "application/json");
-  return res.end(JSON.stringify(resUser, null, 3));
+  return res.end(JSON.stringify([newUser, ...userData], null, 3));
 });
 
 export default router;
