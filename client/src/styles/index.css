@@ -236,6 +236,10 @@ body {
   padding: 0px 10px 0px 10px;
   color: black;
 }
+.iconify {
+  height: 24px;
+  width: 24px;
+}
 .Get_Method_Button_Container {
   display: flex;
 }

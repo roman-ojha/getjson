@@ -47,6 +47,7 @@
 @media screen and (min-width: 950px) and (max-width: 1200px) {
   .UpperBar_Container {
     height: 450px;
+    border-radius: 20px;
   }
   .Header_Container {
     justify-content: space-around;
@@ -72,6 +73,190 @@
     width: 100%;
     margin-left: 20px;
   }
+
+  .Get_PostMethod_Container {
+    display: flex;
+    width: calc(100% - 30px);
+    border: 1px solid blue;
+    justify-content: space-between;
+  }
+
+  .GetMethod_Container,
+  .PostMethod_Container {
+    /* border: 1px solid blue; */
+    width: 49%;
+    /* min-height: 30vh; */
+    height: fit-content;
+    margin-top: 20px;
+    border-radius: var(--primary-container-border-radius);
+    background-image: linear-gradient(150deg, #070071c2 10%, #aef3c7b6 100%);
+    padding: 1%;
+    box-sizing: border-box;
+  }
+
+  .GetMethod_Title {
+    font-size: 1.5rem;
+    font-family: var(--primary-font-family);
+    font-weight: 600;
+    color: white;
+  }
+  .Method_OutputViewer_Container {
+    margin-top: 20px;
+    max-height: 500px;
+  }
+
+  /* Buttom Part */
+  .Id_and_Get_Button_Container {
+    margin-bottom: 15px;
+  }
+  .GetMethod_Container,
+  .PostMethod_Container {
+    margin-top: 15px;
+    border-radius: 18px;
+  }
+  .Id_and_Get_Button_Container input {
+    width: 23%;
+    border-radius: 8px;
+    height: 40px;
+  }
+  .Get_Method_Button_Container {
+    display: flex;
+  }
+  .Get_Method_Button_Container .Get_Method_Get_Button {
+    width: 120px;
+    height: 40px;
+  }
+  .Get_Method_Button_Container .Get_Method_Copy_Button,
+  .Post_Method_Button_Container .Get_Method_Copy_Button {
+    width: 45px;
+    height: 40px;
+    border-radius: 8px;
+  }
+  .InputField_Post_Button_Container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .InputField_Post_Button_Container button {
+    width: 120px;
+    height: 40px;
+  }
+  .InputField_Container {
+    width: 70%;
+  }
+  .InputField_Container input {
+    width: 40%;
+    border-radius: 10px;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+  .Post_Method_Button_Container .Get_Method_Copy_Button {
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 950px) {
+  /* Buttom Part */
+  .Id_and_Get_Button_Container {
+    margin-bottom: 15px;
+  }
+  .GetMethod_Container,
+  .PostMethod_Container {
+    margin-top: 15px;
+    border-radius: 18px;
+  }
+  .Id_and_Get_Button_Container input {
+    width: 25%;
+    border-radius: 7px;
+    height: 35px;
+  }
+  .Get_Method_Button_Container {
+    display: flex;
+  }
+  .Get_Method_Button_Container .Get_Method_Get_Button {
+    width: 95px;
+    height: 35px;
+  }
+  .Get_Method_Button_Container .Get_Method_Copy_Button,
+  .Post_Method_Button_Container .Get_Method_Copy_Button {
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+  }
+  .InputField_Post_Button_Container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .InputField_Post_Button_Container button {
+    width: 95px;
+    height: 35px;
+  }
+  .InputField_Container {
+    width: 65%;
+  }
+  .InputField_Container input {
+    width: 37%;
+    border-radius: 7px;
+    height: 35px;
+    margin-bottom: 13px;
+  }
+  .InputField_Container input:read-write,
+  .Id_and_Get_Button_Container input:read-write {
+    font-size: 0.9rem;
+  }
+  .Post_Method_Button_Container .Get_Method_Copy_Button {
+    margin-top: 13px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  /* Buttom Part */
+  .Id_and_Get_Button_Container {
+    margin-bottom: 10px;
+  }
+  .GetMethod_Container,
+  .PostMethod_Container {
+    margin-top: 10px;
+    border-radius: 15px;
+  }
+  .Id_and_Get_Button_Container input {
+    width: 20%;
+    border-radius: 5px;
+    height: 30px;
+  }
+  .Get_Method_Button_Container .Get_Method_Get_Button {
+    width: 85px;
+    height: 30px;
+  }
+  .iconify {
+    height: 20px;
+    width: 20px;
+  }
+  .Get_Method_Button_Container .Get_Method_Copy_Button,
+  .Post_Method_Button_Container .Get_Method_Copy_Button {
+    width: 35px;
+    height: 30px;
+    border-radius: 8px;
+  }
+  .InputField_Post_Button_Container button {
+    width: 85px;
+    height: 30px;
+  }
+  .InputField_Container {
+    width: 65%;
+  }
+  .InputField_Container input {
+    width: 35%;
+    border-radius: 7px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  .InputField_Container input:read-write,
+  .Id_and_Get_Button_Container input:read-write {
+    font-size: 0.85rem;
+  }
+  .Post_Method_Button_Container .Get_Method_Copy_Button {
+    margin-top: 10px;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 950px) {
   .NavBar_Title_Container {
@@ -79,6 +264,7 @@
   }
   .UpperBar_Container {
     height: 450px;
+    border-radius: 18px;
   }
   .Header_Container {
     justify-content: space-around;
@@ -224,6 +410,93 @@
   .Get_Button {
     width: 135px;
     height: 38px;
+  }
+
+  /* Buttom Part */
+  .Get_PostMethod_Container {
+    width: 100%;
+    border: 1px solid blue;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .GetMethod_Container,
+  .PostMethod_Container {
+    border: 1px solid blue;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 15px;
+  }
+  .Method_CodeViewer_Container {
+    margin: 0px 10px 0px 10px;
+  }
+  .Method_OutputViewer_Container {
+    margin: 0px 10px 0px 10px;
+    margin-top: 15px;
+    max-height: 400px;
+  }
+  .Id_and_Get_Button_Container {
+    margin-bottom: 15px;
+  }
+  .Id_and_Get_Button_Container input {
+    width: 25%;
+    border-radius: 8px;
+    height: 40px;
+  }
+  .Get_Method_Button_Container {
+    display: flex;
+  }
+  .Get_Method_Button_Container .Get_Method_Get_Button {
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+  }
+  .Get_Method_Button_Container .Get_Method_Copy_Button,
+  .Post_Method_Button_Container .Get_Method_Copy_Button {
+    width: 50px;
+    height: 40px;
+    border-radius: 8px;
+  }
+  .iconify {
+    height: 20px;
+    width: 20px;
+  }
+  .InputField_Post_Button_Container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .InputField_Post_Button_Container button {
+    width: 150px;
+  }
+  .InputField_Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+  }
+  .InputField_Container input {
+    width: 43%;
+    border-radius: 10px;
+    height: 45px;
+    margin-left: 1%;
+    border-width: 0px;
+    margin-bottom: 20px;
+  }
+  .InputField_Container input:read-write {
+    outline: none;
+    font-family: var(--primary-font-family);
+    font-size: 1rem;
+    padding: 0px 5px 0px 15px;
+  }
+
+  .Post_Method_Button_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .Post_Method_Button_Container .Get_Method_Copy_Button {
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 800px) {
