@@ -197,7 +197,9 @@ body {
   font-weight: 600;
   color: white;
 }
-
+.Method_CodeViewer_Container {
+  border-radius: 15px;
+}
 .Method_OutputViewer_Container::-webkit-scrollbar {
   width: 5px;
 }
@@ -214,6 +216,7 @@ body {
 .Method_OutputViewer_Container {
   margin-top: 20px;
   max-height: 500px;
+  border-radius: 15px;
 }
 
 .Id_and_Get_Button_Container {
