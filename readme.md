@@ -7,6 +7,7 @@
 </div>
 
 ## Running On:
+[<h2>https://getjson.netlify.app</h2>](https://getjson.netlify.app)
 [<h2>https://getjson-data.firebaseapp.com</h2>](https://getjson-data.firebaseapp.com)
 
 ## UI:
