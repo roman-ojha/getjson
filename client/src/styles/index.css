@@ -89,7 +89,7 @@ body {
   font-size: 1.3rem;
   font-family: var(--primary-font-family);
   font-weight: 600;
-  background-color: #aef3c7;
+  background-color: var(--primary-button-color);
   cursor: pointer;
   transition-duration: 200ms;
   color: rgb(37, 37, 37);

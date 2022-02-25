@@ -6,3 +6,30 @@
   --primary-background-color: #070071c2;
   --primary-button-color: #aef3c7;
 }
+/* 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-button-color: #a7d8ba;
+  }
+  body {
+    background-color: rgba(255, 0, 0, 0);
+  }
+  .Start_Button,
+  .Get_Button,
+  .Id_and_Get_Button_Container button,
+  .InputField_Post_Button_Container button {
+    color: rgb(0, 0, 0);
+  }
+} */
+
+/* @media screen and (min-width: 1000px) {
+  :root {
+    --primary-button-color: #aef3c7;
+  }
+  .Id_and_Get_Button_Container input {
+    background-color: white;
+  }
+  .InputField_Container input {
+    background-color: white;
+  }
+} */
