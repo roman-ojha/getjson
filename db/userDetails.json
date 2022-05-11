@@ -4,84 +4,226 @@
     "displayName": "Mark Mark",
     "username": "MarkMark95",
     "email": "MarkMark95@gmail.com",
-    "phoneNumber": 985432176,
     "picture": "https://images.unsplash.com/photo-1534614971-6be99a7a3ffd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-    "address": {
-      "country": "Usa",
-      "city": "Washington"
-    },
     "DOB": {
       "year": 1999,
       "month": 7,
       "day": 13
+    },
+    "address": {
+      "country": "Usa",
+      "city": "Washington"
+    },
+    "stories": {
+      "caption": "Life is full of surprises.",
+      "picture": "https://images.unsplash.com/photo-1534614971-6be99a7a3ffd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "date": "Mar 5, 2020"
     }
   },
   {
     "id": 2,
-    "displayName": "James Smith",
+    "name": "James Smith",
     "username": "JamesSmith95",
     "email": "JamesSmith95@gmail.com",
-    "phoneNumber": 9823148251,
     "picture": "https://images.unsplash.com/photo-1597204081767-4c14a6b7cbec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2luZ2xlJTIwcGVyc29ufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-    "address": {
-      "country": "Usa",
-      "city": "Boston"
-    },
     "DOB": {
       "year": 2010,
       "month": 8,
       "day": 12
+    },
+    "address": {
+      "country": "Usa",
+      "city": "Boston"
+    },
+    "stories": {
+      "caption": "To be the best, you must be able to handle the worst.",
+      "picture": "https://images.unsplash.com/photo-1597204081767-4c14a6b7cbec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2luZ2xlJTIwcGVyc29ufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+      "date": "Apr 5, 2021"
     }
   },
   {
     "id": 3,
-    "displayName": "John Johnson",
+    "name": "John Johnson",
     "username": "JohnJohnson345",
     "email": "JohnJohnson345@gmail.com",
-    "phoneNumber": 9843263572,
-    "picture": "https://images.unsplash.com/photo-1597204081767-4c14a6b7cbec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-    "address": {
-      "country": "India",
-      "city": "Mumbai"
-    },
+    "picture": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80",
     "DOB": {
       "year": 1998,
       "month": 9,
       "day": 10
+    },
+    "address": {
+      "country": "India",
+      "city": "Mumbai"
+    },
+    "stories": {
+      "caption": "I’m saying yes to new adventures.",
+      "picture": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80",
+      "date": "May 10, 2022"
     }
   },
   {
     "id": 4,
-    "displayName": "Michael Williams",
+    "name": "Michael Williams",
     "username": "MichaelWilliams987",
     "email": "MichaelWilliams987@gmail.com",
-    "phoneNumber": 9830780256,
     "picture": "https://images.unsplash.com/photo-1502258097612-43e695deebad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-    "address": {
-      "country": "Usa",
-      "city": "East Hartford"
-    },
     "DOB": {
       "year": 1998,
       "month": 12,
       "day": 28
+    },
+    "address": {
+      "country": "Usa",
+      "city": "East Hartford"
+    },
+    "stories": {
+      "caption": "Let life surprise you.",
+      "picture": "https://images.unsplash.com/photo-1502258097612-43e695deebad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "date": "Jan 13, 2019"
     }
   },
   {
     "id": 5,
-    "displayName": "Jessica Miller",
+    "name": "Jessica Miller",
     "username": "JessicaMiller23",
     "email": "JessicaMiller23@gmail.com",
-    "phoneNumber": 9892591459,
     "picture": "https://images.unsplash.com/photo-1583423420318-93a4598b4798?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-    "address": {
-      "country": "Usa",
-      "city": "California"
-    },
     "DOB": {
       "year": 1995,
       "month": 3,
       "day": 20
+    },
+    "address": {
+      "country": "Usa",
+      "city": "California"
+    },
+    "stories": {
+      "caption": "There’s no place like home.",
+      "picture": "https://images.unsplash.com/photo-1583423420318-93a4598b4798?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "date": "Aug 4, 2020"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "picture": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
+    "DOB": {
+      "year": 1995,
+      "month": 3,
+      "day": 20
+    },
+    "address": {
+      "country": "Usa",
+      "city": "California"
+    },
+    "stories": {
+      "caption": "Little by little; day by day.",
+      "picture": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
+      "date": "Oct 7, 2020"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "picture": "https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=742&q=80",
+    "DOB": {
+      "year": 1995,
+      "month": 3,
+      "day": 20
+    },
+    "address": {
+      "country": "Usa",
+      "city": "California"
+    },
+    "stories": {
+      "caption": "I always wear my smile like a sword.",
+      "picture": "https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=742&q=80",
+      "date": "Mar 19, 2021"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "picture": "https://images.unsplash.com/photo-1605993439219-9d09d2020fa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    "DOB": {
+      "year": 1995,
+      "month": 3,
+      "day": 20
+    },
+    "address": {
+      "country": "Usa",
+      "city": "California"
+    },
+    "stories": {
+      "caption": "Smile, it confuses people.",
+      "picture": "https://images.unsplash.com/photo-1605993439219-9d09d2020fa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "date": "Mar 4, 2022"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "picture": "https://images.unsplash.com/photo-1522228115018-d838bcce5c3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    "DOB": {
+      "year": 1995,
+      "month": 3,
+      "day": 20
+    },
+    "address": {
+      "country": "Usa",
+      "city": "California"
+    },
+    "stories": {
+      "caption": "Simplicity is the key to brilliance",
+      "picture": "https://images.unsplash.com/photo-1522228115018-d838bcce5c3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "date": "Dec 5, 2020"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "picture": "https://images.unsplash.com/photo-1499887142886-791eca5918cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+    "DOB": {
+      "year": 1995,
+      "month": 3,
+      "day": 20
+    },
+    "address": {
+      "country": "Usa",
+      "city": "California"
+    },
+    "stories": {
+      "caption": "There is beauty in simplicity.",
+      "picture": "https://images.unsplash.com/photo-1499887142886-791eca5918cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+      "date": "Feb 3, 2022"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "picture": "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+    "DOB": {
+      "year": 1995,
+      "month": 3,
+      "day": 20
+    },
+    "stories": {
+      "caption": "This profile belongs to a lost soul.",
+      "picture": "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+      "date": "Jun 25, 2019"
     }
   }
 ]
