@@ -10,8 +10,6 @@
 ## Client:
 [<h2>https://getjson.netlify.app</h2>](https://getjson.netlify.app)
 
-[<h2>https://getjson-data.firebaseapp.com</h2>](https://getjson-data.firebaseapp.com)
-
 ## API:
 
 [<h2>https://getjson-data.herokuapp.com/user</h2>](https://getjson-data.herokuapp.com/user)
@@ -22,14 +20,14 @@
 ## How to run Locally:
 
 ### Server:
-1. `GetJson`
-2. create '.env.development' file and add your own variable value included in '.env.example'
+1. Directory `GetJson`
+2. create `.env.development` file and add your own variable value included in `.env.example`
 3. Run `yarn` to install all packages
 4. Run `yarn dev` to run the server
 
 ### React:
-1. `GetJson/client`
-2. create '.env.development' file and add your own variable value included in '.env.example'
+1. Directory `GetJson/client`
+2. create `.env.development` file and add your own variable value included in `.env.example`
 3. Run `yarn` to install all packages
 4. Run `yarn dev` to run the server
 
